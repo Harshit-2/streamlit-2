@@ -15,7 +15,7 @@ def main():
     if st.button("Send"):
         if user_input:
             output = query({"inputs": user_input})
-            st.write("Bot:", output['generated_text'])
+            st.write("Bot:", output[0]['generated_text'])
         else:
             st.write("Please enter a message.")
 
